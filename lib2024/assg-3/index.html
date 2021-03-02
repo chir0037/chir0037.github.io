@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3</title>
+</head>
+<body>
+	<header> 
+		<h1>Assignment 3</h1>
+	</header>
+	<div id="wrapper" class="wrapper">
+		<section id="assg-forms" class="main-section">
+			
+			
+			<form action="somepage.php" method="get">
+				<div id="fn-container" class="form-elm">
+					<!-- first name container-->
+					<!--text field-->
+					<label for="FirstName"><b>First name:</b></label>
+					<!-- label has te be followed by input-->
+					<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here" required>
+					<!--1/5 required field-->
+				</div>
+				<br><div id="ln-container" class="form-elm">
+					<!--last name container-->
+					<!--text field-->
+
+					<label for="LastName"><b>Last name:</b></label>
+			
+					<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here" required>
+					<!--2/5 required field-->
+				</div>
+				<br><div id="email-container" class="form-elm">
+					<label for="email"><b>Email:</b></label>
+					
+					 <!-- email input field -->
+
+					<input type="email" name="email" id="email" value="example@g.com" readonly>
+				</div>
+				<br><div id="pass-container" class="form-elm">
+					<label for="pass"><b>Password:</b></label>
+					<input type="password" name="pass" id="pass" required>
+					<!--3/5 required field-->
+				</div>
+
+				<div id="intro-container" class="form-elm">
+					<br><label for="introduction"><b>Introduction:</b></label>
+					<!-- A textarea-->
+					<textarea name="introduction" id="introduction" placeholder="Enter introduction here">
+						Post your introductory text here.
+					</textarea>
+				</div>
+				<!--date-->
+				<br><div id="dt-container" class="form-elm">	
+					<label for="dte"><b>What is your birth date?</b></label>
+					
+					<input type="date" name="dte" id="dte" required><br>
+					<!--4/5 required field-->
+				</div>
+				<br><div id="ph-container" class="form-elm">
+					<label for="phone"><b>Enter your phone number:</b></label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> 
+                    <!--5/5 required field-->
+				</div>
+				<!--radio / single value checkboxes-->
+				<div id="radio-container" class="form-elm">
+					<p><b>What is your gender?</b></p>
+					<label for="woman">
+						
+						<input type="radio" name="gender-form" id="woman" value="woman" checked>
+						Woman
+					</label>
+					<label>
+						<input type="radio" name="gender-form" id="man" value="man">
+						Man
+					</label>
+					<label>
+						<input type="radio" name="gender-form" id="other" value="other">
+						Other
+					</label>
+				</div>
+				<!--text for address-->
+				<br><div id="add-container" class="form-elm">
+					<br><label for="address"><b>What is your address?</b></label>
+					
+					<input type="text" name="Address" id="Address" placeholder="Enter your address here ">
+				</div>
+				<!--text for cities-->
+				<br><div id="ct-container" class="form-elm">
+					<br><label for="city"><b>What is your city?</b></label>
+					
+					<input type="text" name="City" id="City" placeholder="Enter your city here ">
+				</div>
+				
+				<!-- drop down for provinces and territories-->
+
+				<br><div id="opt-container" class="form-elm">
+					<label for="Province"><b>What is your province or territory?</b></label>
+					<select id="Province" name="Province">
+						<optgroup label="Province">
+							<option value="ontario">Ontario</option>
+							<option value="quebec">Quebec</option>
+							<option value="newfoundland_labrador">Newfoundland and Labrador</option>
+							<option value="new_brunswick">New Brunswick</option>
+							<option value="pei">Prince Edward Island</option>
+							<option value="saskatchewan">Saskatchewan</option>
+							<option value="alberta">Alberta</option>
+							<option value="manitoba">Manitoba</option>
+							<option value="british_columbia">British Columbia</option>
+							<option value="nova_scotia">Nova Scotia</option>
+							
+						</optgroup>
+						<optgroup label="Territory">
+							<option value="yukon">Yukon</option>
+							<option value="nwt">Northwest Territories</option>
+							<option value="nunavut">Nunavut</option>
+						</optgroup>
+					</select>
+				<!-- drop down for countries-->
+				</div>
+				<br><div id="opt-container" class="form-elm">
+					<label for="Province"><b>Which country would you like to visit?</b></label>
+					<select id="Country" name="Country">
+						<optgroup label="Country">
+							<option value="spain">Spain</option>
+							<option value="indonesia">Indonesia</option>
+							<option value="south_africa">South Africa</option>
+							<option value="new_zealand">New Zealand</option>
+						</optgroup>
+					</select>
+				</div>
+
+                <!--text for postal code-->
+				<br><div id="pc-container" class="form-elm">
+					<br><label for="postal_code"><b>What is your postal code?</b></label>
+					
+					<input type="text" name="postal_code" id="postal_code" placeholder="A1A 1A1 ">
+				</div>
+				<!--check-boxes for hobbies/interests-->
+				<div id="places-container" class="form-elm">
+					<p><b>What are your hobbies/interests?</b></h3><br>
+					<label for="reading">Reading</label>
+					<input type="checkbox" name="hobbies" id="reading" value="reading"> <br>
+
+					<label for="gaming">Gaming</label>
+					<input type="checkbox" name="hobbies" id="gaming" value="gaming"> <br>
+
+					<label for="baking">Baking</label>
+					<input type="checkbox" name="hobbies" id="baking" value="baking"> <br>
+
+					<label for="sports">Playing sports
+					<input type="checkbox" name="hobbies" id="sports" value="sports">
+						
+					</label> <br>
+				</div>
+				<br><div id="ur-container" class="form-elm">
+					<label for="ur"><b>Enter a URL:</b></label>	
+					<input type="url" name="ur" id="ur" ><br>
+				</div>
+				<!-- submit button -->
+				<br><button type="submit">Submit</button>
+				<!--  reset button  -->
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
