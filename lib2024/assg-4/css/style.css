@@ -259,7 +259,7 @@ footer {
   }
 /*Making the sidebar content 34% of the page's width*/
   .site-sidebar {
-    float: right;
+    float: left;
     width: 34%;
     height: 300px;
     box-sizing: border-box;
