@@ -1,5 +1,5 @@
  /*http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
+  v2.0 | 20110126
    License: none (public domain)
 */
 
@@ -16,132 +16,173 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	background-image: url("../img/spikes.png"); 
-	
+  line-height: 1;
+  background-image: url("../img/spikes.png");
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*CSS clearfix*/
 
 .clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
 /*
-	Color Pallete
+  Color Pallete
 
-	Primary Blue : #1976D2;
-	Light blue : #BBDEFB;
-	Primary Text : #212121;
-	Gray : #757575;
-	Orange : #FF5722;
-	Red : #F44336;
-	Yellow : #FFEB3B;
+  Black: #000000
+  Green: #7cc576 
+  Blue; #6dcff6 RGB(109,207,246)  1
+  BG White: #ffffff 
+  Yellow : #FFEB3B;
 */
 
 /************************
-		MOBILE FIRST
+    MOBILE FIRST
 ************************/
 
 /*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
-.col-main, .col-footer, img {
-	width:100%;
+.col-main, .col-footer {
+  width:100%;
 }
 
 /* Header styles */ 
 header {
-	background: #7cc576;
-
+  background: #7CC576;
+  
 }
 
+
+/*Logo placement*/
+
 .logo {
-	float: left;
-	width:112px;
-	padding: 15px;
-	box-sizing: border-box;
-	
-	/*box-sizing border box makes the width adjust according to padding*/
+  float: left;
+  width: 400px;
+  height: 100px;
+  ;
+ 
+ /*Title of the page*/
+
+}
+.page-title {
+  position: relative;
+  top: -90px;
+  left: 150px;
+  font-size: 48px;
+  font-family: 'Source Sans Pro', sans-serif;
+  float: left;
+  width: 100%;
+}
+ 
+
+.desktop-nav {
+  clear: both;
+  display: none;
 }
 
 .desktop-nav {
-	float: right;
-	width: calc(100% - 100px);
-	display: none;
-	/*max width is used in fluid layout to restrict the width of elements that are set to 100% width*/
-	/*This is to make sure the content remains in the readable area for screen sizes that are larger than a tablet*/
-	max-width: 600px;
+  clear: both;
+  display: none;
+  width: 100%;
 }
-
 .desktop-nav ul {
-	width:100%;
+  width:100%;
 }
 
+/*4  navigation sections*/
 .desktop-nav li {
-	box-sizing: border-box;
-	width: 33%; 
-	float: left;
-	background: #F44336;
+  box-sizing: border-box;
+  width: 25%;
+  padding:60px;
+  float: left;
+  position: relative;
+  
 }
-
-.main-nav a {
-	display: block;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 10px;
+  
+/*Create the blue box for the nav links*/
+.main-nav a:link, a:visited {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #6dcff6;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
 }
-
+/*change colors to yellow when the mouse hovers over */
+.main-nav a:hover, a:active{
+  background-color: yellow;
+  color:white;
+  text-align: center; 
+}
+/*Hamburger for the mobile view*/
 .ham {
-	top:100px;
-	float: right;
-	background: #BBDEFB;
+  top:100px;
+  float: right;
+  background: #7CC576;
 }
 
 .mobile-nav {
-	width:100%;
-	clear: both;
+  width:100%;
+  clear: both;
 }
 
 .mobile-nav-container {
-	position: relative;
-	clear: both;
+  position: relative;
+  clear: both;
 }
 
 .mobile-nav li {
-	box-sizing: border-box;
-	width:100%;
-	padding: 10px;
-	background: #FFEB3B;
-	border-bottom: 2px solid #121212;
+  box-sizing: border-box;
+  width:100%;
+  padding: 10px;
+  background: #6dcff6;
+
 }
 
 
@@ -150,103 +191,122 @@ header {
 
 .site-content {
 
-	background: #BBDEFB;
-	padding: 15px;
-	width:66%;
-	box-sizing: border-box;
+  padding: 15px;
+  width:100%;
+  height: 445px;
+  box-sizing: border-box;
+
+  
 }
 
 .site-sidebar {
-	background: #1976D2;
-	padding: 15px;
-	width: 34%;
-	box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  height: 445px;
+  box-sizing: border-box;
 }
 
-/*footer styles*/
+
+/*Making the footer green and styling it*/
 footer {
-	background: #7cc576;
-	padding: 15px;
-	width: 100%;
-	box-sizing: border-box;
+  background: #7CC576;
+  padding: 15px;
+  width: 100%;
+  /*height: 110px;*/
+  box-sizing: border-box;
 }
 
-
-.social-media {
-	background: #7cc576;
-}
 
 
 /*This media query will only target the tablet size*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-	header {
-		background: #FFEB3B;
-	}
+  header {
+    background: #7cc576;
+  }
 }
 
 /*This media query targets, tablet and above*/
 @media only screen and (min-width: 768px) {
-	
-	/*header styles*/
+  
+  /*header styles*/
 
-	/*the following css is used to restrict the content beyond 1280px*/
-	/*This is to make sure the main content is in the readbable area for large screen sizes*/
-	header, main, footer {
+  /*the following css is used to restrict the content beyond 1280px*/
+  /*This is to make sure the main content is in the readbable area for large screen sizes*/
+  header, main, footer {
 
-		max-width: 1280px;
-		margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
 
-	}
+  }
 
-	.desktop-nav {
-		display: block;
-	}
+  .desktop-nav {
+    display: block;
+  }
 
-	.mobile-nav {
-		display: none;
-	}
+  .mobile-nav {
+    display: none;
+  }
 
-	.ham {
-		display: none;
-	}
+  .ham {
+    display: none;
+  }
+/*Making the Main content 66% of the page's width*/
+  .site-content {
+    float: left;
+    width: 66%;
+    height: 300px;
+    box-sizing: border-box;
+  }
+/*Making the sidebar content 34% of the page's width*/
+  .site-sidebar {
+    float: right;
+    width: 34%;
+    height: 300px;
+    box-sizing: border-box;
+  }
+   
+  /* The three pictures*/
 
-	.site-content {
-		float: left;
-		width: 70%;
-		box-sizing: border-box;
-	}
+  .image-gallery .img-slide {
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+  }
 
-	.site-sidebar {
-		float: left;
-		width: 30%;
-		box-sizing: border-box;
-	}
+  
+  
+ 
+  .col-footer {
+    width: 31%;
+    /*total width = 31% + 1%(left margin) + 1% (right margin) */
+    box-sizing: border-box;
+    margin: 0 1%;
+    padding: 30px;
+    float: left;
 
-	.secondary-content .secondary-content-img-container {
-		width: 33%;
-		padding: 10px;
-		box-sizing: border-box;
-		float: left;
-	}
+  }
 
-	.col-footer {
-		width: 31%;
-		/*total width = 31% + 1%(left margin) + 1% (right margin) */
-		box-sizing: border-box;
-		/*border box adjusts the width according to the padding only and does not consider margins*/
-		/*Therefore the space used by margins should be manually adjusted in the width declaration*/
-		margin: 0 1%;
-		padding: 10px;
-		float: left;
-	}
+/* The social media icons*/
+ .social-media {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    float: right;
+  }
+
+  .social-media li{
+    float: right;
+    padding: 5px;
+  }
 }
-
 /*Desktop First Media Query*/
 /* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
 /*These media queries will target the screen sizes for smaller devices*/
 /*The following media query targets the screen sizes that are less than 768px*/
 @media only screen and (max-width: 768px) {
-	footer {
-		background: #FFEB3B;
-	}
+  footer {
+    background: #7CC576;
+  }
 }
