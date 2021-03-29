@@ -254,14 +254,14 @@ footer {
   .site-content {
     float: left;
     width: 66%;
-    height: 300px;
+    height: 320px;
     box-sizing: border-box;
   }
 /*Making the sidebar content 34% of the page's width*/
   .site-sidebar {
     float: left;
     width: 34%;
-    height: 300px;
+    height: 320px;
     box-sizing: border-box;
   }
    
@@ -269,7 +269,7 @@ footer {
 
   .image-gallery .img-slide {
     width: 33%;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     float: left;
     text-align: center; 
