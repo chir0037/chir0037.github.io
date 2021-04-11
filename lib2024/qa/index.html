@@ -111,6 +111,7 @@
 				The value attribute saves the input and submits it to the server. For example:&lt;input type="email" name="email" id="email" value="example@g.com" readonly&gt;.
 					
 		</p></li>
+		<!-- Qus 11 -->
 		<li>
 			<p>
 				<strong>Qus: </strong>
@@ -121,6 +122,7 @@
 				An example of an inline style is &lt;p style="color:red;">This is a paragraph.&lt;/p&gt;
 
 		</p></li>
+		<!-- Qus 12 -->
 		<li>
 			<p>
 				<strong>Qus: </strong>
@@ -129,6 +131,120 @@
 			<p>
 				<strong>Ans: </strong>
 				You would use the link element to link an external style sheet. For example: &lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;
+		</p></li>
+		<!-- Qus 13 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px. 
+			</p>
+			<p>
+				<strong>Ans: </strong><br>
+				 .block {
+				 <br>&nbsp; position: absolute
+				 <br>&nbsp; top: 50%
+				 <br>&nbsp; left: 50%
+				 <br>&nbsp; width: 200px
+				 <br>&nbsp; height: 200px
+			     <br>}
+		</p></li>
+		<!-- Qus 14 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Create CSS keyframes block called "spin" that rotates an element. 
+			</p>
+			<p>
+				<strong>Ans: </strong>
+				 <br>@keyframes spin {
+			     <br>&nbsp;from {
+				 <br>&nbsp;&nbsp;transform: rotate(0deg);
+			     <br>}
+			     <br>&nbsp;to {
+				 <br>&nbsp;&nbsp;transform: rotate(360deg);
+			     <br>}
+		</p></li>
+		<!-- Qus 15 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Create CSS animation block to rotate an element that has the following properties :
+                 <ul>
+                 	 <li>class "rotate-me"</li>
+                     <li>It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin"</li>
+                 </ul>
+			</p>
+			<p>
+				 <strong>Ans: </strong>
+				 <br>.rotate-me{
+				 <br>&nbsp;&nbsp;animation-name: spin;
+                 <br>&nbsp;&nbsp;animation-duration: 0.5s;
+                 <br>&nbsp;&nbsp;animation-iteration-count: 5;
+                 <br>&nbsp;&nbsp;animation-timing-function: linear;<br>
+                 <br>@keyframes spin {
+			     <br>&nbsp;from {
+				 <br>&nbsp;&nbsp;transform: rotate(0deg);
+			     <br>}
+			     <br>&nbsp;to {
+				 <br>&nbsp;&nbsp;transform: rotate(360deg);
+			     <br>}
+
+           
+				
+		</p></li>
+		<!-- Qus 16 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				How would you include create an alert with string "I love JavaScript" using JavaScript?
+			</p>
+			<p>
+				<strong>Ans: </strong>
+				 <br>function myFunction() {
+                 <br>&nbsp;alert("I Love Javascript");
+                 <br>}
+		</p></li>
+		<!-- Qus 17 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery?   
+			</p>
+			<p>
+				<strong>Ans: </strong><br>
+				$('.fade-me').delay(300).fadeOut();
+				
+		</p></li>
+		<!-- Qus 18 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				How would you select all elements with class "my-class" using Javascript and Jquery? 
+			</p>
+			<p>
+				<strong>Ans: </strong>
+				<br> I would use $(".my-class") to select all elements with the class "my-class."
+				
+		</p></li>
+		<!-- Qus 19 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Give an example of input field that takes phone number with format "123-456-7890"? 
+			</p>
+			<p>
+				<strong>Ans: </strong>
+				An example would be: &lt;input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" &gt;
+		</p></li>
+		<!-- Qus 20 -->
+		<li>
+			<p>
+				<strong>Qus: </strong>
+				Among HTML, CSS, Javascript, JQuery, what language did you like the best? State the reason. 
+			</p>
+			<p>
+				<strong>Ans: </strong>
+				Among all the options, I prefered HTML. It was the language I understood the most and the one we used most often.
 		</p></li>
   </ol>
 </body>
