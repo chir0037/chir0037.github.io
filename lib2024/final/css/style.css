@@ -202,6 +202,9 @@ header {
 	width: 100%;
 	box-sizing: border-box;
 }
+
+/*Table styling*/
+
 table {
   font-family: 'open_sansregular';;
   border-collapse: collapse;
@@ -303,7 +306,7 @@ button:hover {
   display: table;
   clear: both;
 }
-div#results {
+/*div#results {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -321,29 +324,27 @@ div#results {
 	opacity: 1;
 }
 
-/*.profile-results{
+.profile-results{
 
 	padding: 15px;
 	width:100%;
 	box-sizing: border-box;
-}
-*/
-/*div#results {*/
- /* border-radius: 5px;*/
-  /*background-color: white;*/
+}*/
 
-  /*padding: 20px;
-  width: 50%;
+div#results {
+  border-radius: 5px;
+  background-color: white;
+
+  padding: 20px;
+  width: 90%;
   margin: 0 auto;
-  float:right;*/
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 100%;
-  margin: auto;
-  float: right;*/
-  /*text-align: center;
-  font-family: arial;*/
+  float:right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: open_sansregular;
+  line-height: 1.6;
 
-/*}
+}
 #results span, #results a {
 
 	opacity: 0;
@@ -353,7 +354,29 @@ div#results {
 
 #results.reveal span, #results.reveal a {
 	opacity: 1;
-}*/
+}
+
+.user {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #72a9ae;
+}
+
+#name_result {
+	font-size:24pt;
+	color:#72a9ae;
+	font-weight: bold; 
+}
+
+#email_result {
+	text-decoration-line: none;
+	color: black;
+	
+}
 /*.fas {
   padding: 10px;
   font-size: 30px;
