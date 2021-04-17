@@ -300,7 +300,7 @@ footer {
     float: right;
     padding: 5px;
   }
-}
+
 /*Desktop First Media Query*/
 /* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
 /*These media queries will target the screen sizes for smaller devices*/

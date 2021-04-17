@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
-	<title>Responsive CSS</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Final Assignment</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-	<div class="image-gallery-container image-gallery-overlay" id="image-gallery-overlay">
-		<div id="img-1" class="img-slide active">
-			<img src="images/gallery-img-1.jpg" alt="Gallery Image 1">
-		</div>
-		<div id="img-2" class="img-slide">
-			<img src="images/gallery-img-2.jpg" alt="Gallery Image 2">
-		</div>
-		<div id="img-3" class="img-slide">
-			<img src="images/gallery-img-3.jpg" alt="Gallery Image 3">
-		</div>
+    <div class="overlay-container loader-container">
+		<div class="loader"></div>
 	</div>
+	
 	<!-- header start -->
 	<header class="site-header clearfix" id="site-header">
-		<div class="logo">My Logo</div>
+		<div class="logo">MY LOGO</div>
 		<!-- main navigation start -->
 		<nav class="main-nav-container desktop-nav">
 			<ul class="main-nav clearfix">
 				<li>
-					<a href="home.html">Home</a>
+					<a href="home.html">HOME</a>
 				</li>
 				<li>
-					<a href="about.html">About</a>
+					<a href="about.html">ABOUT</a>
 				</li>
 				<li>
-					<a href="schedule.html">Schedule</a>
+					<a href="schedule.html">SCHEDULE</a>
 				</li>
 				<li>
-					<a href="portfolio.html">Portfolio</a>
+					<a href="portfolio.html">PORTFOLIO</a>
 				</li>
 				<li>
-					<a href="contact.html">Contact</a>
+					<a href="contact.html">CONTACT</a>
 				</li>
 			</ul>
 		</nav>
 		<!-- main navigation end -->
-		<div class="ham"></div>
+		<div class="ham"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></div>
 		<!-- mobile navigation start -->
 		<div class="mobile-nav-container clearfix">
 			<nav class="main-nav-container mobile-nav">
 			<ul class="main-nav">
+
 				<li>
 					<a href="home.html">Home</a>
 				</li>
@@ -71,123 +66,222 @@
 	<main class="main clearfix" id="main">
 		<!-- site content start -->
 		<article class="col-main site-content">
+			<h2>ABOUT</h2> <br>
 			<!-- main content start -->
 			<section class="main-content">
-				<h2>About</h2>
-				<p>Lorem ipsum dolor sit amet, consecteur adipiscing elit. Mauris feugiat a erat hendrerit condimentum. Fusce ac scelerisque mi, eget fringila sem. Morbbi feugiat nisl ac sorci semper posuere, Morbi ultrices hendrerit nisl a venenatis. Praesent iaculis facilisis sapien eu vestibulum. Vivamus et turpis sed velit pretium. Donec arcu magna, suscipit eu efficitur ut, consectetur sit amet massa. Morbi dapilus sapien ac mattis hendrerit. Donec at purus finibus, volupat nibh elementum, congue leo. Suspendisse nec est sit amet nisl malesuada iaculis eget nec nun. Mauris eget ultricies leo.</p>
+				<p>Lorem ipsum dolor sit amet, consecteur adipiscing elit. Mauris feugiat a erat hendrerit condimentum. Fusce ac scelerisque mi, eget fringila sem. Morbbi feugiat nisl ac sorci semper posuere, Morbi ultrices hendrerit nisl a venenatis. Praesent iaculis facilisis sapien eu vestibulum. Vivamus et turpis sed velit pretium. Donec arcu magna, suscipit eu efficitur ut, consectetur sit amet massa. Morbi dapilus sapien ac mattis hendrerit. Donec at purus finibus, volupat nibh elementum, congue leo. Suspendisse nec est sit amet nisl malesuada iaculis eget nec nun. Mauris eget ultricies leo.</p><br>
 				<p>Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante egestas finibus eget a lorem. In lorem mauris, cursus sodales sapien id, tincidunt bibendum sapien. Sed ac nunc id quam porttitor varius sodales eget nulla. Donec tempus dictum dui, sed tristique purus pulvinar quis. Aliquam ultricies tempro pulvinar. Duis ultrices mauris sed mi vestibulum varius. Mauris molestie ut magna et maximus. Vestibulum sodales sapien nec tortor consectetur, imperdiet pulvinar lectus iaculis. Ut libero tellus, blandit vel mattis sed, consectetur id justo. Aliquam quis ante ac dolor iaculis.</p>
+				<br><br><h2>SCHEDULE</h2><br>
 			</section>
-			<!-- main content end -->
-			<!-- image gallery start -->
-			<section class="image-gallery">
-				<h3>Image Gallery</h3>
-			
-				<div class="image-gallery-thumb-container clearfix">
-					<!-- data-img-id is an additional attribute used to give custom information that standard attributes cannot provide  -->
-					<div class="img-slide-thumb img-slide-thumb-active" data-img-id="img-1" >
-						<img src="images/gallery-img-1.jpg" alt="Gallery Image 1">
-					</div>
-					<div class="img-slide-thumb" data-img-id="img-2">
-						<img src="images/gallery-img-2.jpg" alt="Gallery Image 2">
-					</div>
-					<div class="img-slide-thumb" data-img-id="img-3">
-						<img src="images/gallery-img-3.jpg" alt="Gallery Image 3">
+
+		</article>
+
+			<aside class="col-main site-sidebar">
+				<div class="image-container clearfix">
+					<div class="img-slide">
+						<br><img src="img/img-1.png" alt="Image 1">
 					</div>
 				</div>
-			</section>
-			<!-- image gallery end -->
-			<section class="js-basics clearfix">
-				<h4>JS basics</h4>
-				<div id="color-1" class="js-color"></div>
-				<div id="color-2" class="js-color"></div>
-				<div id="color-3" class="js-color"></div>
-				<!-- <div id="color-4" class="js-color"></div> -->
-
-				<div id="indicator-text"></div>
-				<button class="reset">Reset</button>
-			</section>
-		</article>
-		<!-- site content end -->
-		<!-- site sidebar start -->
-		<aside class="col-main site-sidebar">
-			<h4>Sidebar</h4>
-			<nav class="sidebar-nav-container">
-				<ul class="sidebar-nav">
-					<li>
-						<a href="https://google.com" onclick="alert('clicked')">Google</a>
-					</li>
-					<li>
-						<a href="https://wikipedia.com">Wikipedia</a>
-					</li>
-					<li>
-						<a href="https://w3schools.com">W3Schools</a>
-					</li>
-				</ul>
-			</nav>
-		</aside>
+			</aside>
+        <!-- <h2>SCHEDULE</h2><br> -->
+		<table id="schedule">
+		     <tr>
+                 <th><b>TIME</b></th>
+                 <th>MONDAY</th>
+                 <th>TUESDAY</th>
+                 <th>WEDNESDAY</th>
+                 <th>THURSDAY</th>
+                 <th>FRIDAY</th>
+             </tr>
+             <tr>
+                 <td>09:00-11:00</td>
+                 <td>Communications I</td>
+                 <td>Client Services</td>
+                 <td>Special Collections</td>
+                 <td>Directed Research Seminar</td>
+                 <td>Client Services</td>
+             </tr>
+             <tr>
+                 <td>11:00-12:30</td>
+                 <td>Reference</td>
+                 <td>Internet App</td>
+                 <td>Library Software</td>
+                 <td>French</td>
+                 <td>Reference</td>
+             </tr>
+             <tr>
+                 <td>14:00-15:00</td>
+                 <td>Aquisitions</td>
+                 <td>General Elective</td>
+                 <td>Marketing</td>
+                 <td>Emerging Library Tech</td>
+                 <td>Library Software</td>
+             </tr>
+             <tr>
+                 <td>15:30-17:30</td>
+                 <td>French</td>
+                 <td>French</td>
+                 <td>Acquisitions</td>
+                 <td>Subject Analysis</td>
+                 <td>Internet App</td>
+             </tr>
+       </table>
+            <section class="form-value-transfer clearfix">
+               <article class="form">
+				<form id="form" action="submit.php" method="post">
+					<br><h2>EDIT PROFILE</h2><br>
+				<div class="row">
+                     <div class="col-25">
+						<label>Name:</label>
+					 </div>
+					 <div class="col-75">
+						<input type="text" name="name" id="name" placeholder="Enter your name here">
+					</div>
+				</div>
+				<div class="row">
+				     <div class="col-25">
+						<label>Email:</label>
+					</div>
+					<div class="col-75">
+						<input type="email" required name="email" id="email" placeholder="Enter your email here">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label>Address:</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="address" id="address" placeholder="Enter your address here">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label>City:</label>
+					</div>
+					<div class="col-75">
+						<input type="text" name="city" id="city" placeholder="Enter your city here">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label> Province:</label>
+					</div>
+					<div class="col-75">
+					    <select id="Province" name="Province">
+						     <optgroup label="Province">
+						     	 <option value="" disabled selected>Select Province</option>
+							     <option value="ON">Ontario</option>
+							     <option value="QC">Quebec</option>
+							     <option value="NL">Newfoundland and Labrador</option>
+							     <option value="NB">New Brunswick</option>
+							     <option value="PE">Prince Edward Island</option>
+							     <option value="SK">Saskatchewan</option>
+							     <option value="AB">Alberta</option>
+							     <option value="MB">Manitoba</option>
+							     <option value="BC">British Columbia</option>
+							     <option value="NS">Nova Scotia</option>	
+						     </optgroup>
+						     <optgroup label="Territory">
+							     <option value="YK">Yukon</option>
+							     <option value="NT">Northwest Territories</option>
+							     <option value="NU">Nunavut</option>
+						     </optgroup>
+					     </select>
+					 </div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label>Postal Code:</label>
+					</div>
+					<div class="col-75">
+						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+					 </div>
+				</div>
+                   <div class="row">
+                     <div class="row">
+					     <button type="submit">SUBMIT</button>
+					 </div>
+			       </div>
+				</form> 
+               </article>
+               <aside class="profile-results">
+                <br><h2>PROFILE INFO</h2><br>
+				<div id="results">
+					<!-- <a href="#"><i class="fas fa-user"></i>></a> -->
+					<p>Name: <span id="name_result"></span></p><br>
+					<!-- <p><a href="#" id="email_result"></a></p>
+					<p><span id="address_result"></span></p> -->
+					<!-- <p><span id="city_results"></span></p><br>
+					<p><span id="province_results"></span></p> -->
+					<!-- <p><span id="pc_result"></span></p> -->
+					
+				</div>
+		       </aside>
+            </section>
 		<!-- site sidebar end -->
 	</main>
 	<!-- main end -->
 	<!-- footer start -->
 	<footer class="footer" id="footer">
 		<div class="footer-container">
-			<section class="col-footer company-info">
-				<h4>Comapny info</h4>
-				<address>
-					<p>1385 Woodroffe Avenue</p>
-					<p>Ottawa, ON K2G 1V8</p>
-				</address>
-			</section>
-
 			<section class="col-footer links">
-				<h4>Links</h4>
+				<h4> QUICK LINKS</h4><br>
 				<nav>
 					<ul>
 						<li>
-							<a href="contact-us.html">Contact Us</a>
+							<br><a href="schedule.html">SCHEDULE</a>
 						</li>
 						<li>
-							<a href="about-us.html">About Us</a>
+							<br><a href="about.html">ABOUT</a>
 						</li>
 						<li>
-							<a href="images.html">Images</a>
+							<br><a href="portfolio.html">PORTFOLIO</a>
+						</li>
+						<li>
+							<br><a href="contact.html">CONTACT</a>
 						</li>
 					</ul>
 				</nav>
 			</section>
-
 			<section class="col-footer social-media">
-				<h4>Social Media</h4>
-				<nav>
+				<h4>FOLLOW US</h4><br>
+				<nav class="footer-nav-container social-media-nav">
 					<ul>
 						<li>
-							<a href="facebook.com">Facebook</a>
+							<a href="http://www.facebook.com/" class="fa fa-facebook"></a>
 						</li>
 						<li>
-							<a href="twitter.com">Twitter</a>
+							<a href="http://www.youtube.com/" class="fa fa-youtube-play"></a>
 						</li>
 						<li>
-							<a href="instagram.com">Instagram</a>
+							<a href="http://twitter.com" class="fa fa-twitter"></a>
 						</li>
 					</ul>
 				</nav>
 			</section>
 		</div>
-
-		<p>Copyright &copy; Responsive CSS 2018</p>
+			<section class="col-footer address-info">
+				<h4>ADDRESS</h4><br>
+				<address>
+					<p>1385 Woodroffe Avenue</p>
+					<p>Nepean, ON K2G 1V8</p>
+					<p>Canada</p>
+				</address>
+			</section>
 	</footer>
 	<!-- footer end -->
 
 	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
 	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
-	<script type="text/javascript" src="scripts/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
 	<!-- script tag is an embeded way of adding javascript to your document -->
 	<!-- Script tag must be added at the bodttom of your HTML file before the closing of <body> tag -->
 	<!-- This will make sure that all the elements are properly loaded and ready for javascript to interact with them -->
 
 	<script type="text/javascript">
-		document.querySelector('.logo').style.backgroundColor="red";
+		document.querySelector('.logo').style.backgroundColor="white";
 	</script>
 
 </body>
