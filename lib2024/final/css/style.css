@@ -84,7 +84,6 @@ p {
 
 	Light blue : #72a9ae;
 	Lighter blue:#90d0d5;
-	Primary Text : #212121;
 	Dark Gray:#454545;
 	Black:#000000
 	White:#FFFFFF;
@@ -108,10 +107,10 @@ header {
 .logo {
 	float: left;
 	/*width:120px;*/
-	padding: 36px;
+	padding: 15px;
 	
 	font-family: 'Lobster', cursive;
-	font-size: 36px;
+	font-size: 48px;
 	background: white;
 	color:  #72a9ae;
 	box-sizing: border-box;
@@ -156,9 +155,9 @@ header {
   color:white;
   text-align: center; 
 }
-.main-nav .icon {
+/*.main-nav .icon {
   display: none;
-}
+}*/
 
 .ham {
 	top:100px;
@@ -166,7 +165,14 @@ header {
 	background: #72a9ae;
 }
 .ham .icon {
-	display: none;
+	/*display: none;*/
+	font-size: 48px;
+	background: white;
+	color:black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .mobile-nav {
 	width:100%;
@@ -212,6 +218,7 @@ table {
  /* max-width: 500px;*/
   margin: 0 auto;
   border-color: black;
+  float: left;
 }
 
 th {
@@ -375,8 +382,19 @@ div#results {
 #email_result {
 	text-decoration-line: none;
 	color: black;
-	
 }
+.envelope-icon	{
+	font-size: 48px;
+	color: #72a9ae;
+	text-align: center;
+}
+
+/*.fa-enveloppe {
+	font-size: 18px;
+	text-align: center;
+}*/
+
+
 /*.fas {
   padding: 10px;
   font-size: 30px;
@@ -436,7 +454,7 @@ footer {
     display: flex;
     justify-content: center;
 }
-.fa   {
+.social-media a {
   padding: 10px;
   font-size: 20px;
   width: 20px;
@@ -564,8 +582,6 @@ footer {
 		width: 31%;
 		/*total width = 31% + 1%(left margin) + 1% (right margin) */
 		box-sizing: border-box;
-		/*border box adjusts the width according to the padding only and does not consider margins*/
-		/*Therefore the space used by margins should be manually adjusted in the width declaration*/
 		margin: 0 1%;
 		padding: 30px;
 		float: left;
@@ -574,9 +590,7 @@ footer {
 }
 
 /*Desktop First Media Query*/
-/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
-/*These media queries will target the screen sizes for smaller devices*/
-/*The following media query targets the screen sizes that are less than 768px*/
+
 @media only screen and (max-width: 768px) {
 	footer {
 		background: #454545;
