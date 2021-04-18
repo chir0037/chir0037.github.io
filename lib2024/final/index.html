@@ -34,6 +34,11 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="ham">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
 		<!-- main navigation end -->
 		<!-- <div class="ham"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></div> -->
 		<!-- mobile navigation start -->
@@ -56,6 +61,7 @@
 				<li>
 					<a href="contact.html">Contact</a>
 				</li>
+
 			</ul>
 		</nav>
 		</div>
@@ -83,48 +89,52 @@
 				</div>
 			</aside>
         <h2>SCHEDULE</h2><br>
-		<table id="schedule">
-		     <tr>
-                 <th><b>TIME</b></th>
-                 <th>MONDAY</th>
-                 <th>TUESDAY</th>
-                 <th>WEDNESDAY</th>
-                 <th>THURSDAY</th>
-                 <th>FRIDAY</th>
-             </tr>
-             <tr>
-                 <td>09:00-11:00</td>
-                 <td>Communications I</td>
-                 <td>Client Services</td>
-                 <td>Special Collections</td>
-                 <td>Directed Research Seminar</td>
-                 <td>Client Services</td>
-             </tr>
-             <tr>
-                 <td>11:00-12:30</td>
-                 <td>Reference</td>
-                 <td>Internet App</td>
-                 <td>Library Software</td>
-                 <td>French</td>
-                 <td>Reference</td>
-             </tr>
-             <tr>
-                 <td>14:00-15:00</td>
-                 <td>Aquisitions</td>
-                 <td>General Elective</td>
-                 <td>Marketing</td>
-                 <td>Emerging Library Tech</td>
-                 <td>Library Software</td>
-             </tr>
-             <tr>
-                 <td>15:30-17:30</td>
-                 <td>French</td>
-                 <td>French</td>
-                 <td>Acquisitions</td>
-                 <td>Subject Analysis</td>
-                 <td>Internet App</td>
-             </tr>
-       </table>
+		
+			
+			<!-- main content start -->
+
+		    <table id="schedule">
+		        <tr>
+                     <th><b>TIME</b></th>
+                     <th>MONDAY</th>
+                     <th>TUESDAY</th>
+                     <th>WEDNESDAY</th>
+                     <th>THURSDAY</th>
+                     <th>FRIDAY</th>
+                </tr>
+                <tr>
+                     <td>09:00-11:00</td>
+                     <td>Communications I</td>
+                     <td>Client Services</td>
+                     <td>Special Collections</td>
+                     <td>Directed Research Seminar</td>
+                     <td>Client Services</td>
+                </tr>
+                <tr>
+                     <td>11:00-12:30</td>
+                     <td>Reference</td>
+                     <td>Internet App</td>
+                     <td>Library Software</td>
+                     <td>French</td>
+                     <td>Reference</td>
+                </tr>
+                <tr>
+                     <td>14:00-15:00</td>
+                     <td>Aquisitions</td>
+                     <td>General Elective</td>
+                     <td>Marketing</td>
+                     <td>Emerging Library Tech</td>
+                     <td>Library Software</td>
+                </tr>
+                <tr>
+                     <td>15:30-17:30</td>
+                     <td>French</td>
+                     <td>French</td>
+                     <td>Acquisitions</td>
+                     <td>Subject Analysis</td>
+                     <td>Internet App</td>
+                </tr>
+           </table>
             <section class="form-value-transfer clearfix">
                <article class="form">
 				<form id="form" action="submit.php" method="post">
@@ -134,7 +144,7 @@
 						<label>Name:</label>
 					 </div>
 					 <div class="col-75">
-						<input type="text" name="name" id="name" placeholder="Enter your name here">
+						<input type="text" name="name" id="name" placeholder="Enter your name here" required>
 					</div>
 				</div>
 				<div class="row">
@@ -142,7 +152,7 @@
 						<label>Email:</label>
 					</div>
 					<div class="col-75">
-						<input type="email" required name="email" id="email" placeholder="Enter your email here">
+						<input type="email"  name="email" id="email" placeholder="Enter your email here" required>
 					</div>
 				</div>
 				<div class="row">
@@ -150,7 +160,7 @@
 						<label>Address:</label>
 					</div>
 					<div class="col-75">
-						<input type="text" name="address" id="address" placeholder="Enter your address here">
+						<input type="text" required name="address" id="address" placeholder="Enter your address here">
 					</div>
 				</div>
 				<div class="row">
@@ -158,7 +168,7 @@
 						<label>City:</label>
 					</div>
 					<div class="col-75">
-						<input type="text" name="city" id="city" placeholder="Enter your city here">
+						<input type="text" required name="city" id="city" placeholder="Enter your city here">
 					</div>
 				</div>
 				<div class="row">
@@ -166,9 +176,9 @@
 						<label> Province:</label>
 					</div>
 					<div class="col-75">
-					    <select id="province" name="province">
-						     <optgroup label="Province">
-						     	 <option value="" disabled selected>Select Province</option>
+					    <select id="province" name="province" required>
+						    
+						     	 <option value="" disabled selected>Select a Province or Territory</option>
 							     <option value="ON">Ontario</option>
 							     <option value="QC">Quebec</option>
 							     <option value="NL">Newfoundland and Labrador</option>
@@ -179,12 +189,9 @@
 							     <option value="MB">Manitoba</option>
 							     <option value="BC">British Columbia</option>
 							     <option value="NS">Nova Scotia</option>	
-						     </optgroup>
-						     <optgroup label="Territory">
 							     <option value="YK">Yukon</option>
 							     <option value="NT">Northwest Territories</option>
 							     <option value="NU">Nunavut</option>
-						     </optgroup>
 					     </select>
 					 </div>
 				</div>
@@ -214,12 +221,15 @@
 					<p><a href="#" id="email_result"></a></p>
 					<p><span id="address_result">,</span> <span id="city_result">,</span></p>
 					<p><span id="province_result">,</span> <span id="pc_result"></span></p>
+					<div class="envelope-icon">
+					     <i class="fa fa-envelope"></i>
+					</div>
 					
-				</div><br>
+				</div>
 		       </aside>
             </section>
 		<!-- site sidebar end -->
-	</main>
+	</main><br>
 	<!-- main end -->
 	<!-- footer start -->
 	<footer class="footer" id="footer">
@@ -259,7 +269,7 @@
 					</ul>
 				</nav>
 			</section>
-		</div>
+		
 			<section class="col-footer address-info">
 				<h4>ADDRESS</h4><br>
 				<address>
@@ -268,21 +278,20 @@
 					<p>Canada</p>
 				</address>
 			</section>
+	    </div>
 	</footer>
 	<!-- footer end -->
 
 	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
 	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="js/scripts.js"></script>
 
 	<!-- script tag is an embeded way of adding javascript to your document -->
 	<!-- Script tag must be added at the bodttom of your HTML file before the closing of <body> tag -->
 	<!-- This will make sure that all the elements are properly loaded and ready for javascript to interact with them -->
 
-	<script type="text/javascript">
-		document.querySelector('.logo').style.backgroundColor="white";
-	</script>
+	
 
 </body>
 </html>
