@@ -30,6 +30,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/*Add the background and font*/
 body {
 	line-height: 1;
 	background-image: url("../img/hypnotize.png");
@@ -63,11 +64,10 @@ h4 {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  /*font-family: 'open_sansregular';*/
 }
 
 p {
-	/*font-family: 'open_sansregular';*/
+
 	font-size: 16px;
 }
 /*CSS clearfix*/
@@ -98,7 +98,7 @@ p {
 	width:100%;
 }
 
-/* Header styles */ 
+/* Styling the header */ 
 header {
 	background: white;
 
@@ -106,15 +106,12 @@ header {
 
 .logo {
 	float: left;
-	/*width:120px;*/
 	padding: 15px;
-	
 	font-family: 'Lobster', cursive;
 	font-size: 48px;
 	background: white;
 	color:  #72a9ae;
 	box-sizing: border-box;
-	/*box-sizing border box makes the width adjust according to padding*/
 }
 
 
@@ -135,9 +132,6 @@ header {
 }
 
 .desktop-nav li {
-	/*box-sizing: border-box;
-	width: 20%; 
-	padding: 5px;*/
 	float: left;
 }
 
@@ -155,17 +149,14 @@ header {
   color:white;
   text-align: center; 
 }
-/*.main-nav .icon {
-  display: none;
-}*/
 
+/*The Hamburger*/
 .ham {
 	top:100px;
 	float: right;
 	background: #72a9ae;
 }
 .ham .icon {
-	/*display: none;*/
 	font-size: 48px;
 	background: white;
 	color:black;
@@ -194,7 +185,7 @@ header {
 
 
 
-/*main content styles*/
+/*Styling the main content*/
 
 .site-content {
 
@@ -209,13 +200,12 @@ header {
 	box-sizing: border-box;
 }
 
-/*Table styling*/
+/*Styling the Table*/
 
 table {
   font-family: 'open_sansregular';;
   border-collapse: collapse;
   width: 100%;
- /* max-width: 500px;*/
   margin: 0 auto;
   border-color: black;
   float: left;
@@ -247,13 +237,8 @@ tr:nth-child(odd) {
   background-color: #FFF;
 }
 
-/*.form {
-	padding: 15px;
-	width:100%;
-	box-sizing: border-box;*/
-/*}*/
 
-
+/*Styling the form*/
 form {
 	width: 90%;
 	margin: 20px auto;
@@ -307,36 +292,13 @@ button:hover {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-/*div#results {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  max-width: 500px;
-  margin: 0 auto;
-}
 
-#results span, #results a {
-	opacity: 0;
-	transition: all 0.5s ease-out;
-	transition-delay: 1s;
-}
-
-#results.reveal span, #results.reveal a {
-	opacity: 1;
-}
-
-.profile-results{
-
-	padding: 15px;
-	width:100%;
-	box-sizing: border-box;
-}*/
+/*Styling the div results*/
 
 div#results {
   border-radius: 5px;
@@ -388,97 +350,65 @@ div#results {
 	color: #72a9ae;
 	text-align: center;
 }
-
-/*.fa-enveloppe {
-	font-size: 18px;
-	text-align: center;
-}*/
-
-
-/*.fas {
-  padding: 10px;
-  font-size: 30px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 10px;
-  border-radius: 50%;
-  list-style-type: none;
-  float: left;
- }
-.fa-user {
-  background: white;
-  color: black;
-  border: 1px green;
-}
-*/
-
-/*footer styles*/
+/*Styling the footer*/
 footer {
 	background: #454545;
 	padding: 15px;
 	width: 100%;
-	/*height: 300px;*/
 	box-sizing: border-box;
 }
 
 
 .address-info {
-/*	background: #454545;*/
 	text-align: center;
 	color: white;
 	line-height: 1.6;
-	/*float:right;*/
 }
 
 .links {
-/*	background: #454545;*/
 	text-align: center;
 	color: white;
 	text-decoration: none;
-/*	float:left;*/
 }
 
      .links a {
 	     color: white;
 	     text-decoration: none;
-	/*float: center;*/
      }
+
 .social-media {
-/*	background: #454545;*/
 	text-align: center;
 	color: white;
 }
 
-     .social-media ul {
-         display: flex;
-         justify-content: center;
-     }
+.social-media ul {
+    display: flex;
+    justify-content: center;
+}
+.social-media a {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 50%;
+    list-style-type: none;
+    float: left;
+}
+a.fa-facebook {
+   background: #3B5998;
+   color: white;
+}
 
-     .social-media a {
-         padding: 10px;
-         font-size: 20px;
-         width: 20px;
-         text-align: center;
-         text-decoration: none;
-         margin: 5px 10px;
-         border-radius: 50%;
-         list-style-type: none;
-         float: left;
-      }
-             .fa-facebook {
-                 background: #3B5998;
-                 color: white;
-             }
-
-             .fa-twitter  {
-                 background: #55ACEE;
-                 color: white;
-             }
-             .fa-youtube-play {
-                 background: #cd201f;
-                 color: white;
-             }  
+a.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+a.fa-youtube-play {
+    background: #cd201f;
+    color: white;
+}  
 
 /*This media query will only target the tablet size*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -490,9 +420,8 @@ footer {
 /*This media query targets, tablet and above*/
 @media only screen and (min-width: 768px) {
 	
-	/*header styles*/
 
-	/*the following css is used to restrict the content beyond 1280px*/
+	/*Restrict the content beyond 1280px*/
 	/*This is to make sure the main content is in the readbable area for large screen sizes*/
 	header, main, footer {
 
@@ -569,15 +498,7 @@ footer {
 		width: 40%;
 		box-sizing: border-box;
 	}
-	/*.form-value-transfer {
-	    float:left;
-		width: 50%;
-		box-sizing: border-box;
-	}
-    #results {
-    	float:right;
-		width: 50%;
-		box-sizing: border-box;*/
+	
     footer {
     	height: 230px;
     }

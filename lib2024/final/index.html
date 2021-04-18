@@ -2,11 +2,13 @@
 <html lang="en-ca">
 <head>
 	<title>Final Assignment</title>
+<!-- 	Add the icons, fonts, and style -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<!-- Add the loader -->
     <div class="overlay-container loader-container">
 		<div class="loader"></div>
 	</div>
@@ -40,7 +42,7 @@
 			</a>
 		</div>
 		<!-- main navigation end -->
-		<!-- <div class="ham"><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></div> -->
+	
 		<!-- mobile navigation start -->
 		<div class="mobile-nav-container clearfix">
 			<nav class="main-nav-container mobile-nav">
@@ -68,19 +70,18 @@
 		<!-- mobile navigation end -->
 	</header>
 	<!-- header end -->
-	<!-- main start -->
+	<!-- main content starts -->
 	<main class="main clearfix" id="main">
-		<!-- site content start -->
+
 		<article class="col-main site-content">
 			<h2>ABOUT</h2> <br>
-			<!-- main content start -->
 			<section class="main-content">
 				<p>Lorem ipsum dolor sit amet, consecteur adipiscing elit. Mauris feugiat a erat hendrerit condimentum. Fusce ac scelerisque mi, eget fringila sem. Morbbi feugiat nisl ac sorci semper posuere, Morbi ultrices hendrerit nisl a venenatis. Praesent iaculis facilisis sapien eu vestibulum. Vivamus et turpis sed velit pretium. Donec arcu magna, suscipit eu efficitur ut, consectetur sit amet massa. Morbi dapilus sapien ac mattis hendrerit. Donec at purus finibus, volupat nibh elementum, congue leo. Suspendisse nec est sit amet nisl malesuada iaculis eget nec nun. Mauris eget ultricies leo.</p><br>
 				<p>Nunc accumsan tellus in porttitor tincidunt. Praesent ac risus sit amet ante egestas finibus eget a lorem. In lorem mauris, cursus sodales sapien id, tincidunt bibendum sapien. Sed ac nunc id quam porttitor varius sodales eget nulla. Donec tempus dictum dui, sed tristique purus pulvinar quis. Aliquam ultricies tempro pulvinar. Duis ultrices mauris sed mi vestibulum varius. Mauris molestie ut magna et maximus. Vestibulum sodales sapien nec tortor consectetur, imperdiet pulvinar lectus iaculis. Ut libero tellus, blandit vel mattis sed, consectetur id justo. Aliquam quis ante ac dolor iaculis.</p>
 			</section>
 
 		</article>
-
+           <!--  Create the image in the sidebar -->
 			<aside class="col-main site-sidebar">
 				<div class="image-container clearfix">
 					<div class="img-slide">
@@ -88,11 +89,11 @@
 					</div>
 				</div>
 			</aside>
-        <h2>SCHEDULE</h2><br>
-		
-			
-			<!-- main content start -->
+		<!-- site sidebar ends -->
 
+<!-- 	Create the table -->
+	    <section id="table-section" class="main-section">
+           <h2>SCHEDULE</h2><br>
 		    <table id="schedule">
 		        <tr>
                      <th><b>TIME</b></th>
@@ -135,6 +136,9 @@
                      <td>Internet App</td>
                 </tr>
            </table>
+        </section>
+<!--  End of the table -->
+            <!-- Create the form -->
             <section class="form-value-transfer clearfix">
                <article class="form">
 				<form id="form" action="submit.php" method="post">
@@ -210,13 +214,14 @@
 			       </div>
 				</form> 
                </article>
+               <!-- End of the form -->
+               <!-- Form results -->
                <aside class="profile-results">
                 <br><h2>PROFILE INFO</h2><br>
 				<div id="results">
 					<div class="user">
 						<br><img src="img/user-img.png" alt="Image 2">
 					</div>
-					<!-- <a href="#"><i class="fas fa-user"></i>></a> -->
 					<p><span id="name_result"></span></p>
 					<p><a href="#" id="email_result"></a></p>
 					<p><span id="address_result"></span>, <span id="city_result"></span>,</p>
@@ -228,10 +233,9 @@
 				</div>
 		       </aside>
             </section>
-		<!-- site sidebar end -->
 	</main><br>
-	<!-- main end -->
-	<!-- footer start -->
+	<!-- main ends -->
+	<!-- footer with 3 colums -->
 	<footer class="footer" id="footer">
 		<div class="footer-container">
 			<section class="col-footer links">
@@ -250,13 +254,13 @@
 						<li>
 							<br><a href="contact.html">CONTACT</a>
 						</li>
-					</ul>
+					</ul><br>
 				</nav>
 			</section>
 			<section class="col-footer social-media">
-				<br><h4>FOLLOW US</h4><br>
+				<h4>FOLLOW US</h4><br>
 				<nav class="footer-nav-container social-media-nav">
-					<ul>
+					<br><ul>
 						<li>
 							<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
 						</li>
@@ -280,18 +284,9 @@
 			</section>
 	    </div>
 	</footer>
-	<!-- footer end -->
-
-	<!-- script tag is not a self closing tag so it requires </script> to close itself -->
-	<!-- To add an external script file, script tag is used with src attribute containing the path of the script that we would like to include in this document -->
+	<!-- footer ends -->
+	<!-- import the javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
-
-	<!-- script tag is an embeded way of adding javascript to your document -->
-	<!-- Script tag must be added at the bodttom of your HTML file before the closing of <body> tag -->
-	<!-- This will make sure that all the elements are properly loaded and ready for javascript to interact with them -->
-
-	
-
 </body>
 </html>
