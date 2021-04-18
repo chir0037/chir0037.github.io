@@ -427,7 +427,7 @@ footer {
 /*	background: #454545;*/
 	text-align: center;
 	color: white;
-	box-sizing: border-box;
+	line-height: 1.6;
 	/*float:right;*/
 }
 
@@ -436,7 +436,6 @@ footer {
 	text-align: center;
 	color: white;
 	text-decoration: none;
-	box-sizing: border-box;
 /*	float:left;*/
 }
 
@@ -449,7 +448,6 @@ footer {
 /*	background: #454545;*/
 	text-align: center;
 	color: white;
-	box-sizing: border-box;
 }
 
      .social-media ul {
