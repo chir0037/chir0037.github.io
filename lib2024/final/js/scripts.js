@@ -2,6 +2,9 @@ window.onload = init;
 
 function init() {
 
+	document.querySelector('.ham').onclick = showHideMobileMenu;
+
+
 	// JQuery function attached to the submit event of the form with id "form"
 	$('#form').submit(function (e) {
 		// e.preventDefualt to avoid the form being submitted to page specified in action attribute 
@@ -19,6 +22,19 @@ function init() {
    		 })
 	});
 
+}
+
+function showHideMobileMenu() {
+
+	var mobileNav = document.querySelector('.mobile-nav');
+
+	// in a if statement == is used to compare two value, if the values matches then the condition is true
+	// an if statement is followed by an else statement which runs when the given condition is not met
+	if(mobileNav.style.display=="block") {
+		mobileNav.style.display="none";
+	} else {
+		mobileNav.style.display="block";
+	}
 }
 
 // to show the form values in the results div which takes the argument "form"
