@@ -8,7 +8,6 @@
 	background: radial-gradient(#0093e9, #80d0c7);
 	top: 0;
 	z-index: 2;
-
 }
 
 .loader {
@@ -18,30 +17,37 @@
 	width: 150px;
 	height: 150px;
 	margin: -75px 0 0 -75px;
+	border: 16px solid #ffffff;
 	border-radius: 50%;
 	border-top: 16px solid #e0c3fc;
 	animation: spin 2s linear infinite, change-color 4s ease-in-out infinite, border-radius-change 1s ease infinite;
 }
 
 
-/*Keyframes declaration to spin*/
+/*keyframes declarion to spin*/
+
 @keyframes spin {
 	from {
 		transform: rotate(0deg);
 	}
+
 	to {
 		transform: rotate(360deg);
 	}
 }
 
 
+/*This @keyframes declaration will change the color from blue to lavender to light blue */
+
 @keyframes change-color {
+
 	0% {
 		border-top-color: #e0c3fc;
 	}
 	50% {
 		border-top-color: #8ec5fc;
 	}
+
 	100% {
 		border-top-color: #e0c3fc;
 	}
