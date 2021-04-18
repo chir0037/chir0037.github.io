@@ -1,5 +1,5 @@
-@import url("overlay-loader.css");
 @charset "utf-8";
+@import url("overlay-loader.css");
  /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -82,8 +82,8 @@ p {
 /*
 	Color Pallete
 
-	Light blue : #72a9ae;
-	Lighter blue:#90d0d5;
+	Blue Gray : #72a9ae;
+	Lighter blue gray:#90d0d5;
 	Dark Gray:#454545;
 	Black:#000000
 	White:#FFFFFF;
@@ -226,7 +226,7 @@ th {
 	font-weight: bold;
 	font-size: 24px;
 }
-}
+
 
 td {
 	font-size: 18px;
@@ -253,7 +253,7 @@ tr:nth-child(odd) {
 	box-sizing: border-box;*/
 /*}*/
 
-}
+
 form {
 	width: 90%;
 	margin: 20px auto;
@@ -418,15 +418,16 @@ footer {
 	background: #454545;
 	padding: 15px;
 	width: 100%;
-	height: 240px;
+	/*height: 300px;*/
 	box-sizing: border-box;
 }
 
 
 .address-info {
-	/*background: #454545;*/
+/*	background: #454545;*/
 	text-align: center;
 	color: white;
+	box-sizing: border-box;
 	/*float:right;*/
 }
 
@@ -435,49 +436,51 @@ footer {
 	text-align: center;
 	color: white;
 	text-decoration: none;
+	box-sizing: border-box;
 /*	float:left;*/
 }
 
-.links a {
-	color: white;
-	text-decoration: none;
+     .links a {
+	     color: white;
+	     text-decoration: none;
 	/*float: center;*/
-}
+     }
 .social-media {
 /*	background: #454545;*/
-*/	text-align: center;
+	text-align: center;
 	color: white;
-
-/*	float: center;*/
-}
-.social-media ul{
-    display: flex;
-    justify-content: center;
-}
-.social-media a {
-  padding: 10px;
-  font-size: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 10px;
-  border-radius: 50%;
-  list-style-type: none;
-  float: left;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+	box-sizing: border-box;
 }
 
-.fa-twitter  {
-  background: #55ACEE;
-  color: white;
-}
-.fa-youtube-play {
-  background: #cd201f;
-  color: white;
-}
+     .social-media ul {
+         display: flex;
+         justify-content: center;
+     }
+
+     .social-media a {
+         padding: 10px;
+         font-size: 20px;
+         width: 20px;
+         text-align: center;
+         text-decoration: none;
+         margin: 5px 10px;
+         border-radius: 50%;
+         list-style-type: none;
+         float: left;
+      }
+             .fa-facebook {
+                 background: #3B5998;
+                 color: white;
+             }
+
+             .fa-twitter  {
+                 background: #55ACEE;
+                 color: white;
+             }
+             .fa-youtube-play {
+                 background: #cd201f;
+                 color: white;
+             }  
 
 /*This media query will only target the tablet size*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -577,7 +580,9 @@ footer {
     	float:right;
 		width: 50%;
 		box-sizing: border-box;*/
-	}
+    footer {
+    	height: 230px;
+    }
 	.col-footer {
 		width: 31%;
 		/*total width = 31% + 1%(left margin) + 1% (right margin) */
@@ -586,8 +591,8 @@ footer {
 		padding: 30px;
 		float: left;
 	}
-
 }
+
 
 /*Desktop First Media Query*/
 
