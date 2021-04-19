@@ -14,7 +14,7 @@ function init() {
    		 		showformValues(form);
    		 		$('.overlay-container').delay(500).fadeOut(500);
    		 		$("#results").addClass('reveal');
-   		 })
+   		 });
 	});
 
 }
@@ -39,5 +39,7 @@ function showformValues(form){
 		if(field.name=="email"){
 			$("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
 		}
-	})				
+	});			
 }
+
+
